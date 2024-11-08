@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/ocean_background">
+
+    <Button
+        android:id="@+id/fishButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:focusable="true"
+        android:text="Start Fishing"
+        android:visibility="visible"
+        android:clickable="true"/>
+
+    <ImageButton
+        android:id="@+id/catchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/catch_button"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        android:visibility="invisible"
+        android:clickable="false"/>
+
+
+    <ImageView
+        android:id="@+id/fish_1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/fish_image" />
+
+    <ImageView
+        android:id="@+id/fish_2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/fish_image" />
+
+    <ImageView
+        android:id="@+id/fish_3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/fish_image" />
+
+    <ImageView
+        android:id="@+id/fish_4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/fish_image" />
+
+    <ImageView
+        android:id="@+id/fish_5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/fish_image" />
+
+    <ImageView
+        android:id="@+id/fishing_object"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fishing_object"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tilt the Line</string>
+    <string name="logoDescription">Logo</string>
+    <string name="leave_button_desc">Used to leave the game</string>
+    <string name="settings_button_desc">Used to open settings</string>
+    <string name="play_button_desc">Used to start the game</string>
+    <string name="lake_button_desc">Used to open fishing</string>
+</resources>

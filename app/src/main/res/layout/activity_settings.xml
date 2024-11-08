@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settings_bg">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextAppearance="@style/ToolbarTitleTextStyle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:title="  Settings  "
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:navigationContentDescription="Back"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"/>
+
+    <LinearLayout
+        android:id="@+id/notificationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/notificationLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notifications :"
+            android:textSize="30sp"
+            android:shadowColor="@color/black"
+            android:shadowRadius="25"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageButton
+            android:id="@+id/notificationToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/notif_icon"
+            android:contentDescription="Toggle Notifications"
+            android:background="?attr/selectableItemBackground"
+            android:layout_marginEnd="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vibrationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/notificationLayout"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/vibrationLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vibrations :"
+            android:textSize="30sp"
+            android:shadowColor="@color/black"
+            android:shadowRadius="25"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageButton
+            android:id="@+id/vibrationToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/vibra_icon"
+            android:contentDescription="Toggle Vibrations"
+            android:background="?attr/selectableItemBackground"
+            android:layout_marginEnd="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/vibrationLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/volumeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VOLUME"
+            android:textSize="50sp"
+            android:shadowColor="@color/black"
+            android:shadowRadius="25"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <SeekBar
+            android:id="@+id/volumeSeekBar"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:max="100"
+            android:progressDrawable="@drawable/seekbar_custom"
+            android:thumb="@drawable/thumb_image"
+            android:thumbOffset="10dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

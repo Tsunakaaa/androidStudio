@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:src="@drawable/titlettl"
+        android:contentDescription="@string/logoDescription"
+        android:scaleType="fitCenter"/>
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="125dp"
+        android:layout_margin="20dp">
+
+        <ImageButton
+            android:id="@+id/buttonOpenGame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/button_bg"
+            android:scaleType="fitCenter"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/textPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=" PLAY "
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:shadowColor="@android:color/black"
+            android:shadowRadius="25"
+            android:shadowDx="0"
+            android:shadowDy="0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="125dp"
+        android:layout_margin="20dp">
+
+        <ImageButton
+            android:id="@+id/buttonOpenSettings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/button_bg"
+            android:scaleType="fitCenter"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/textSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=" SETTINGS "
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:shadowColor="@android:color/black"
+            android:shadowRadius="25"
+            android:shadowDx="0"
+            android:shadowDy="0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="125dp"
+        android:layout_margin="20dp">
+
+        <ImageButton
+            android:id="@+id/buttonLeave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/button_bg"
+            android:scaleType="fitCenter"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/textQuit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=" QUIT "
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:shadowColor="@android:color/black"
+            android:shadowRadius="25"
+            android:shadowDx="0"
+            android:shadowDy="0" />
+    </RelativeLayout>
+
+</LinearLayout>
