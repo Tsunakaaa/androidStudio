@@ -79,6 +79,7 @@ public class FishingActivity extends AppCompatActivity implements SensorEventLis
         fishButton.setVisibility(View.INVISIBLE);
         });
 
+
         catchButton.setOnClickListener(v ->
         {fishingObject.setVisibility(View.INVISIBLE);
             catchButton.setVisibility(View.INVISIBLE);
