@@ -85,7 +85,7 @@ public class FishingActivity extends AppCompatActivity implements SensorEventLis
             catchButton.setClickable(false);
             fishButton.setClickable(true);
             fishButton.setVisibility(View.VISIBLE);
-        }); 
+        });
     }
 
     private void initializeFishPositions(List<ImageView> allFish) {
